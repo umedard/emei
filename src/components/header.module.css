@@ -1,0 +1,36 @@
+.logo {
+    border: "2px solid blue";
+}
+
+
+.search {
+    padding: .6rem;
+    border-radius: 5px;
+    border: none;
+    margin-left: 1rem;
+    font-size: 1rem;
+}
+
+.headerRight {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header {
+  padding: 1em;
+  background-color: orange;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media (max-width: 700px) {
+    .header {
+        padding: 1em;
+        background-color: yellow;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+}

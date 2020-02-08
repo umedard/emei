@@ -1,27 +1,20 @@
 import React from "react"
-import { Link } from "gatsby"
-import styled from 'styled-components'
+import headerStyles from "./header.module.css"
 import Menu from './mainMenu'
 
-const Head = styled.h1`
-  padding: 1em;
-  background: orange;
-`
 
 
+const Header = () => (
+  <header >
+    <div className={headerStyles.header}>
+      <div className={headerStyles.logo}>EmeiGroup</div>
+      <div className={headerStyles.headerRight} >
+        <div>中文 | English </div>
+        <input className={headerStyles.search} type="text" placeholder="search"></input>
+      </div>
+    </div>
 
-const Header = ({ siteTitle }) => (
-  <header style={{
-    margin: `0 auto`,
-    maxWidth: 960,
-    border: '2px solid red'
-  }}>
-    
-    <Head>  
-
-       logo - english/search
-     </Head>
-     <Menu/>
+    <Menu />
   </header>
 )
 
