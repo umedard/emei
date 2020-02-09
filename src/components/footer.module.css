@@ -1,0 +1,9 @@
+.footer {
+    border: 1px solid red;
+    margin: 0;
+}
+
+
+.footer__copyright {
+    text-align: center;
+}
