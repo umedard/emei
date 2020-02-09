@@ -43,5 +43,6 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, 
       },
     },
+    `gatsby-transformer-remark`,
   ],
 }
