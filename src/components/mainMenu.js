@@ -1,17 +1,18 @@
 import React from "react"
-import { Link } from "gatsby"
-import styled from 'styled-components'
-
-const Head = styled.h1`
-  padding: 1em;
-  background: orange;
-`
+import menuStyles from "./mainMenu.module.css"
 
 const Menu = () => (
-  <header>
-    
-        MainMenu.js
-  </header>
+  <nav className={menuStyles.menu}>
+      <ul className={menuStyles.menu__list}>
+          <li className={menuStyles.menu__item}><a className={menuStyles.menu__link} href="">Home</a></li>
+          <li className={menuStyles.menu__item}><a className={menuStyles.menu__link} href="">About Us</a></li>
+          <li className={menuStyles.menu__item}><a className={menuStyles.menu__link} href="">News</a></li>
+          <li className={menuStyles.menu__item}><a className={menuStyles.menu__link} href="">Products</a></li>
+          <li className={menuStyles.menu__item}><a className={menuStyles.menu__link} href="">Support</a></li>
+          <li className={menuStyles.menu__item}><a className={menuStyles.menu__link} href="">Partners</a></li>
+          <li className={menuStyles.menu__item}><a className={menuStyles.menu__link} href="">Contact Us</a></li>
+      </ul>
+  </nav>
 )
 
 export default Menu
