@@ -6,7 +6,7 @@ const Footer = () => (
   <footer className={footerStyles.footer} >
     
 
-    <p className={footerStyles.footer__copywright}>Copyright 2005-{new Date().getFullYear()} © Emei (HK) Electronics Ltd. All rights reserved.</p>
+    <p className={footerStyles.footer__copyright}>Copyright 2005-{new Date().getFullYear()} © Emei (HK) Electronics Ltd. All rights reserved.</p>
  
   </footer>
 )

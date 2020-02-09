@@ -1,9 +1,12 @@
 .footer {
-    border: 1px solid red;
     margin: 0;
+    border: 1px solid red;
 }
 
 
 .footer__copyright {
     text-align: center;
+    width: 100%;
+    text-align: center;
+    font-size: .7rem;
 }
