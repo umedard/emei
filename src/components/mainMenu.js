@@ -2,7 +2,7 @@ import React from "react"
 import menuStyles from "./mainMenu.module.css"
 
 const Menu = () => (
-  <nav className={menuStyles.menu}>
+  <nav>
       <ul className={menuStyles.menu__list}>
           <li className={menuStyles.menu__item}><a className={menuStyles.menu__link} href="">Home</a></li>
           <li className={menuStyles.menu__item}><a className={menuStyles.menu__link} href="">About Us</a></li>

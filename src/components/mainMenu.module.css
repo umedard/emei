@@ -1,21 +1,16 @@
-.menu {
-
-}
-
-
 .menu__list {
+    height: 2.6rem;
     margin: 0;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    height: 4rem;
     background-color: #E93F33;
 }
 
 .menu__item {
     list-style: none;
-    height: 20px;
+    transform: translateY(5px);
 }
 
 .menu__link {
