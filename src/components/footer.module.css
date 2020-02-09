@@ -1,12 +1,47 @@
 .footer {
     margin: 0;
-    border: 1px solid red;
 }
 
-
 .footer__copyright {
-    text-align: center;
     width: 100%;
     text-align: center;
     font-size: .7rem;
+}
+
+.footer__description {
+    font-size: .7rem;
+}
+
+.footer__logo {
+    border: 1px solid red;
+}
+
+.footer__links {
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* list */
+
+.list {
+    text-decoration: none;
+    border: 2px dashed greenyellow;
+    margin: 0;
+}
+
+
+.list__item {
+    list-style: none;
+    margin: 0;
+}
+
+.list__link {
+    text-decoration: none;
+    
+    color: red;
+}
+
+.list__link_header {
+    color: blue;
 }
