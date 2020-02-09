@@ -1,3 +1,17 @@
+/* Logo */
+
+.logo {
+    margin: .7rem auto;
+    width: 20rem;
+    height: 3rem;
+    background-image: url("../images/logo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+/* Footer */
+
 .footer {
     margin: 0;
 }
@@ -10,6 +24,7 @@
 
 .footer__description {
     font-size: .7rem;
+    padding: 2rem 1rem 0;
 }
 
 .footer__logo {
@@ -17,19 +32,37 @@
 }
 
 .footer__links {
-    border: 1px solid red;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
-/* list */
+/* list of links */
 
 .list {
     text-decoration: none;
-    border: 2px dashed greenyellow;
     margin: 0;
+    width: 11rem;
+    padding: 1rem .5rem;
 }
 
+@media (max-width: 800px) {
+    .list {
+        width: 17rem;
+    }
+}
+
+@media (max-width: 644px) {
+    .list {
+        width: 13rem;
+    }
+}
+
+@media (max-width: 440px) {
+    .list {
+        width: 11rem;
+    }
+}
 
 .list__item {
     list-style: none;
@@ -38,10 +71,21 @@
 
 .list__link {
     text-decoration: none;
-    
-    color: red;
+    color: black;
+    font-size: .7rem;
+}
+
+
+@media (max-width: 800px) {
+    .list__link {
+        text-decoration: none;
+        font-size: .6rem;
+    }
 }
 
 .list__link_header {
-    color: blue;
+    color: #424242;
+    font-weight: 900;
+    font-size: 1rem;
+    border-bottom: 1px solid #424242;
 }

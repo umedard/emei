@@ -10,7 +10,7 @@ const Menu = () => (
           <li className={style.menu__item}><a className={style.menu__link} href="#x">Products</a></li>
           <li className={style.menu__item}><a className={style.menu__link} href="#x">Support</a></li>
           <li className={style.menu__item}><a className={style.menu__link} href="#x">Partners</a></li>
-          <li className={style.menu__item}><a className={style.menu__link} href="#x">Contact Us</a></li>
+          {/* <li className={style.menu__item}><a className={style.menu__link} href="#x">Contact Us</a></li> */}
       </ul>
   </nav>
 )

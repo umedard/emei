@@ -4,9 +4,9 @@ import style from "./footer.module.css"
 
 const Footer = () => (
   <footer className={style.footer} >
-    <div className={style.footer__logo}>
-        logo
-    </div>
+
+   
+
     <p className={style.footer__description}>
         We provide Thermal Materials, EMI Shielding Materials, Polymer and Adhesives Materials, Insulation Materials,
         Inductive Components and Bulk Molding Compounds.
@@ -25,15 +25,31 @@ const Footer = () => (
             <li className={style.list__item}><a className={style.list__link} href="#X">Our History</a></li>
           </ul>
           <ul className={style.list}>
-            <li className={style.list__item}><a className={`${style.list__link} ${style.list__link_header}`} href="#X">Header</a></li>
-            <li className={style.list__item}><a className={style.list__link} href="#X">Item</a></li>
-            <li className={style.list__item}><a className={style.list__link} href="#X">Item</a></li>
-            <li className={style.list__item}><a className={style.list__link} href="#X">Item</a></li>
-            <li className={style.list__item}><a className={style.list__link} href="#X">Item</a></li>
+            <li className={style.list__item}><span className={`${style.list__link} ${style.list__link_header}`} href="#X">News</span></li>
+            <li className={style.list__item}><a className={style.list__link} href="#X">New</a></li>
+            <li className={style.list__item}><a className={style.list__link} href="#X">Company honor</a></li>
           </ul>
+          <ul className={style.list}>
+            <li className={style.list__item}><span className={`${style.list__link} ${style.list__link_header}`} href="#X">Support</span></li>
+            <li className={style.list__item}><a className={style.list__link} href="#X">Feedback</a></li>
+            <li className={style.list__item}><a className={style.list__link} href="#X">Download</a></li>
+            <li className={style.list__item}><a className={style.list__link} href="#X">Application</a></li>
+          </ul>
+          <ul className={style.list}>
+            <li className={style.list__item}><span className={`${style.list__link} ${style.list__link_header}`} href="#X">Product</span></li>
+            <li className={style.list__item}><a className={style.list__link} href="#X">Thermal Management Materi</a></li>
+            <li className={style.list__item}><a className={style.list__link} href="#X">Polymer & Adhesive Materi</a></li>
+            <li className={style.list__item}><a className={style.list__link} href="#X">Inductive Components</a></li>
+            <li className={style.list__item}><a className={style.list__link} href="#X">EMI Shielding Materials</a></li>
+            <li className={style.list__item}><a className={style.list__link} href="#X">Bulk Molding Compounds</a></li>
+          </ul>
+          
     </div>
 
     <p className={style.footer__copyright}>Copyright 2005-{new Date().getFullYear()} © Emei (HK) Electronics Ltd. All rights reserved.</p>
+
+    {/* Footer logo */}
+    <div className={style.logo}></div>
  
   </footer>
 )
