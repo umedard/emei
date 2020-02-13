@@ -18,25 +18,25 @@ const Footer = () => (
 
     <div className={style.footer__links}>
           <ul className={style.list}>
-            <li className={style.list__item}><span className={`${style.list__link} ${style.list__link_header}`} href="#X">About us</span></li>
+            <li className={style.list__item}><span className={`${style.list__link} ${style.list__header}`} href="#X">About us</span></li>
             <li className={style.list__item}><a className={style.list__link} href="#X">About Us</a></li>
             <li className={style.list__item}><a className={style.list__link} href="#X">Our Factory</a></li>
             <li className={style.list__item}><a className={style.list__link} href="#X">Our Deliverables</a></li>
             <li className={style.list__item}><a className={style.list__link} href="#X">Our History</a></li>
           </ul>
           <ul className={style.list}>
-            <li className={style.list__item}><span className={`${style.list__link} ${style.list__link_header}`} href="#X">News</span></li>
+            <li className={style.list__item}><span className={`${style.list__link} ${style.list__header}`} href="#X">News</span></li>
             <li className={style.list__item}><a className={style.list__link} href="#X">New</a></li>
             <li className={style.list__item}><a className={style.list__link} href="#X">Company honor</a></li>
           </ul>
           <ul className={style.list}>
-            <li className={style.list__item}><span className={`${style.list__link} ${style.list__link_header}`} href="#X">Support</span></li>
+            <li className={style.list__item}><span className={`${style.list__link} ${style.list__header}`} href="#X">Support</span></li>
             <li className={style.list__item}><a className={style.list__link} href="#X">Feedback</a></li>
             <li className={style.list__item}><a className={style.list__link} href="#X">Download</a></li>
             <li className={style.list__item}><a className={style.list__link} href="#X">Application</a></li>
           </ul>
           <ul className={style.list}>
-            <li className={style.list__item}><span className={`${style.list__link} ${style.list__link_header}`} href="#X">Product</span></li>
+            <li className={style.list__item}><span className={`${style.list__link} ${style.list__header}`} href="#X">Product</span></li>
             <li className={style.list__item}><a className={style.list__link} href="#X">Thermal Management Materi</a></li>
             <li className={style.list__item}><a className={style.list__link} href="#X">Polymer & Adhesive Materi</a></li>
             <li className={style.list__item}><a className={style.list__link} href="#X">Inductive Components</a></li>
