@@ -1,10 +1,12 @@
 import React from 'react'
 import style from "./productSidebar.module.css"
+import { Link } from "gatsby"
 
 export default function ProductSidebar() {
     return (
-        <aside className={style.product}>
-            <Product/>
+        <aside className={style.sidebar}>
+            <p className={style.sidebar__header}>Product</p>
+            <Product url="/Thermal_Management_Materials" name="Thermal Management Materials" photo="./images/logo.jpg"/>
         </aside>
     )
 }
@@ -13,19 +15,14 @@ export default function ProductSidebar() {
 
 function Product(props) {
     return (
-        <div>
-            <div className={style.product__logo}>
-                Logo
-            </div>
+        <Link className={style.product} to={props.url}>
             <div className={style.product__name}>
-                Name
+               {props.name}
             </div>
-            <div className={style.photo}>
-                Product
+            <div >
+                <img className={style.product__photo} src={props.photo} alt={props.name}/>
             </div>
-
-        </div>
-
+        </Link>
     )
 }
 

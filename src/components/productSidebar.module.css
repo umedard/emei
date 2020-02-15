@@ -1,0 +1,32 @@
+/* sidebar */
+.sidebar {
+    max-width: 15rem;
+    background-color: #F7F7F7;
+}
+
+.sidebar__header {
+    margin: 0;
+    padding: .5rem;
+    font-weight: bold;
+}
+
+/* product */
+
+.product {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+    border-top: 1px black solid;
+}
+
+.product__name {
+    padding: .2rem .5rem;
+    width: 100%;
+    color: red;
+}
+
+.product__photo {
+    padding: .5rem;
+    width: 100%;
+}
