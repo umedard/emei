@@ -19,12 +19,12 @@ collections:
     folder: content/products
     create: true
     fields:
+      - { name: category, widget: "select", multiple: false, options: ["Bulk_Molding_Compounds", "EMI_Shielding_Materials", "Inductive_Components", "Polymer_Adhesive_Materials", "Thermal_Management_Materials"]}
       - { name: language, widget: "select", multiple: false, options: ["zh", "en"]}
       - { name: path, label: Path }
-      - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
+      - { name: date, label: Date, widget: datetime }
       - { name: body, label: Body, widget: markdown }
-      - { name: category, widget: "select", multiple: false, options: ["Bulk_Molding_Compounds", "EMI_Shielding_Materials", "Inductive_Components", "Polymer_Adhesive_Materials", "Thermal_Management_Materials"]}
   - name: pages
     label: Pages
     folder: content/pages
@@ -32,8 +32,8 @@ collections:
     fields:
       - { name: language, widget: "select", multiple: false, options: ["zh", "en"]}
       - { name: path, label: Path }
-      - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
+      - { name: date, label: Date, widget: datetime }
       - { name: body, label: Body, widget: markdown }
      
     
