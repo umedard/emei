@@ -9,6 +9,7 @@ collections:
     folder: content/blog
     create: true
     fields:
+      - { name: language, widget: "select", multiple: false, options: ["zh", "en"], default: ["zh"]}
       - { name: path, label: Path }
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
@@ -18,16 +19,24 @@ collections:
     folder: content/products
     create: true
     fields:
+      - { name: language, widget: "select", multiple: false, options: ["zh", "en"], default: ["zh"]}
       - { name: path, label: Path }
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
+      - { name: category, widget: "select", multiple: false, options: ["Design", "UX", "Dev"], default: ["Design"]}
   - name: pages
     label: Pages
     folder: content/pages
-    create: false
+    create: true
     fields:
+      - { name: language, widget: "select", multiple: false, options: ["zh", "en"], default: ["zh"]}
       - { name: path, label: Path }
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
+     
+    
+    
+    
+    
