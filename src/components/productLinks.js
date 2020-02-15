@@ -1,5 +1,5 @@
 import React from 'react'
-import style from "./ProductLinks.module.css"
+import style from "./productLinks.module.css"
 import {Link} from 'gatsby'
 
 export default function ProductLinks() {
