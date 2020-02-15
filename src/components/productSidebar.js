@@ -13,14 +13,14 @@ export default function ProductSidebar() {
 
 
 
-function Product(props) {
+function Product({ url, name, photo}) {
     return (
-        <Link className={style.product} to={props.url}>
+        <Link className={style.product} to={url}>
             <div className={style.product__name}>
-               {props.name}
+               {name}
             </div>
             <div >
-                <img className={style.product__photo} src={props.photo} alt={props.name}/>
+                <img className={style.product__photo} src={photo} alt={name}/>
             </div>
         </Link>
     )
