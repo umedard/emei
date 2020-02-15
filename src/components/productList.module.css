@@ -1,13 +1,7 @@
 /* sidebar */
-.sidebar {
-    max-width: 15rem;
+.list {
+    width: 100%;
     background-color: #F7F7F7;
-}
-
-.sidebar__header {
-    margin: 0;
-    padding: .5rem;
-    font-weight: bold;
 }
 
 /* product */
@@ -27,6 +21,7 @@
 }
 
 .product__photo {
-    padding: .5rem;
+    padding: 0rem;
+    margin: 0;
     width: 100%;
 }
