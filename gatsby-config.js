@@ -16,15 +16,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `blog`,
-        path: `${__dirname}/blog/`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `products`,
-        path: `${__dirname}/products/`,
+        name: `content`,
+        path: `${__dirname}/content/`,
       },
     },
     `gatsby-transformer-sharp`,
