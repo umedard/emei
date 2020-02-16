@@ -1,4 +1,5 @@
 ---
+category: Bulk Molding Compounds
 language: en
 path: Bisco® or Poron®
 title: Bisco® or Poron®
