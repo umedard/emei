@@ -14,6 +14,7 @@ collections:
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
+      - { name: "layout",label: "Layout", widget: "hidden", default: "blog"}
   - name: products
     label: Products
     folder: content/products
@@ -25,6 +26,7 @@ collections:
       - { name: title, label: Title }
       - { name: date, label: Date, widget: datetime }
       - { name: body, label: Body, widget: markdown }
+      - { name: "layout",label: "Layout", widget: "hidden", default: "products"}
   - name: pages
     label: Pages
     folder: content/pages
@@ -35,6 +37,9 @@ collections:
       - { name: title, label: Title }
       - { name: date, label: Date, widget: datetime }
       - { name: body, label: Body, widget: markdown }
+      - { name: "layout",label: "Layout", widget: "hidden", default: "pages"}
+
+
      
     
     
