@@ -1,7 +1,6 @@
 ---
 language: en
-path: partners
-title: partners
+title: Partners
 date: 2020-02-16T09:35:25.645Z
 layout: pages
 ---
