@@ -1,5 +1,5 @@
 const path = require(`path`)
-import { graphql } from 'gatsby'
+
 
 const { createFilePath } = require(`gatsby-source-filesystem`)
 exports.onCreateNode = ({ node, getNode, actions }) => {
