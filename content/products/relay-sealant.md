@@ -1,5 +1,5 @@
 ---
-category: Bulk_Molding_Compounds
+category: Bulk Molding Compounds
 language: en
 path: Relay Sealant
 title: Relay Sealant
