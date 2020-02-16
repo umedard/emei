@@ -6,8 +6,9 @@ export default ({ data }) => {
   return (
     <Layout>
       <div>
-          <p>product</p>
+         
         <h1>{post.frontmatter.title}</h1>
+        <h2>{post.frontmatter.category}</h2>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
     </Layout>
@@ -18,7 +19,10 @@ export const query = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {
+        language
+        layout
         title
+        category
       }
     }
   }

@@ -10,7 +10,6 @@ collections:
     create: true
     fields:
       - { name: language, widget: "select", multiple: false, options: ["zh", "en"]}
-      - { name: path, label: Path }
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
@@ -22,7 +21,6 @@ collections:
     fields:
       - { name: category, widget: "select", multiple: false, options: ["Bulk Molding Compounds", "EMI Shielding Materials", "Inductive Components", "Polymer Adhesive Materials", "Thermal Management Materials"]}
       - { name: language, widget: "select", multiple: false, options: ["zh", "en"]}
-      - { name: path, label: Path }
       - { name: title, label: Title }
       - { name: date, label: Date, widget: datetime }
       - { name: body, label: Body, widget: markdown }
@@ -33,7 +31,6 @@ collections:
     create: true
     fields:
       - { name: language, widget: "select", multiple: false, options: ["zh", "en"]}
-      - { name: path, label: Path }
       - { name: title, label: Title }
       - { name: date, label: Date, widget: datetime }
       - { name: body, label: Body, widget: markdown }
