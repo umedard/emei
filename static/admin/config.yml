@@ -20,7 +20,7 @@ collections:
     folder: content/products
     create: true
     fields:
-      - { name: category, widget: "select", multiple: false, options: ["Bulk_Molding_Compounds", "EMI_Shielding_Materials", "Inductive_Components", "Polymer_Adhesive_Materials", "Thermal_Management_Materials"]}
+      - { name: category, widget: "select", multiple: false, options: ["Bulk Molding Compounds", "EMI Shielding Materials", "Inductive Components", "Polymer Adhesive Materials", "Thermal Management Materials"]}
       - { name: language, widget: "select", multiple: false, options: ["zh", "en"]}
       - { name: path, label: Path }
       - { name: title, label: Title }
