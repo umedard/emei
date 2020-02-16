@@ -27,7 +27,7 @@ export default IndexPage
 
 
 export const pageQuery = graphql`
-  query homepage {
+  query Products{
     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
         node {

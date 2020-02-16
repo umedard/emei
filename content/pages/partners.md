@@ -1,7 +1,7 @@
 ---
 language: en
-path: zakopane
-title: Zakopane
+path: partners
+title: partners
 date: 2020-02-16T09:35:25.645Z
 layout: pages
 ---

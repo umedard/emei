@@ -14,7 +14,7 @@ collections:
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
-      - { name: "layout",label: "Layout", widget: "hidden", default: "blog"}
+      - { name: "layout",label: "Layout", widget: "hidden", default: "blogs"}
   - name: products
     label: Products
     folder: content/products

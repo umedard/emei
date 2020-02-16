@@ -23,6 +23,10 @@ exports.createPages = async function({ actions, graphql }) {
               fields {
                 slug
               }
+              frontmatter {
+                language
+                layout
+              }
             }
           }
         }
@@ -30,10 +34,35 @@ exports.createPages = async function({ actions, graphql }) {
     `)
     data.allMarkdownRemark.edges.forEach(edge => {
       const slug = edge.node.fields.slug
-      actions.createPage({
-        path: slug,
-        component: require.resolve(`./src/templates/blog-post.js`),
-        context: { slug: slug },
-      })
+
+      switch (edge.node.frontmatter.layout) {
+        case "pages":
+          actions.createPage({
+            path: slug,
+            component: require.resolve(`./src/templates/pages.js`),
+            context: { slug: slug },
+          })
+          break;
+
+          case "blogs":
+          actions.createPage({
+            path: slug,
+            component: require.resolve(`./src/templates/blog.js`),
+            context: { slug: slug },
+          })
+          break;
+
+          case "products":
+          actions.createPage({
+            path: slug,
+            component: require.resolve(`./src/templates/product.js`),
+            context: { slug: slug },
+          })
+          break;
+      
+        default:
+          break;
+      }
+      
     })
   }
