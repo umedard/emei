@@ -8,8 +8,8 @@
 }
 
 .menu__item {
-    list-style: none;
     transform: translateY(5px);
+    list-style: none;
 }
 
 .menu__link {

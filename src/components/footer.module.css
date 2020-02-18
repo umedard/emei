@@ -23,8 +23,8 @@
 }
 
 .footer__description {
-    font-size: .7rem;
     padding: 2rem 1rem 0;
+    font-size: .7rem;
 }
 
 .footer__logo {
@@ -41,10 +41,10 @@
 /* list of links */
 
 .list {
-    text-decoration: none;
     margin: 0;
-    width: 11rem;
     padding: 1rem .5rem;
+    width: 11rem;
+    text-decoration: none;
 }
 
 @media (max-width: 800px) {
@@ -85,10 +85,10 @@
 }
 
 .list__header {
-    color: #424242;
+    padding: 2rem;
     font-weight: 900;
     font-size: 1rem;
-    padding: 2rem;
+    color: #424242;
+}
    
     /* border-bottom: 1px solid #424242; */
-}
