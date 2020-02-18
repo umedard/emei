@@ -13,8 +13,6 @@ export default function ProductLinks() {
     )
 }
 
-
-
 function LinkTo({to, text}) {
     return (
     <li className={style.list__item}>>> <Link className={style.list__link} to={to}>{text}</Link></li>
