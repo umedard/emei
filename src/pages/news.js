@@ -1,48 +1,48 @@
 import React from "react"
-import ProductList from "../components/productList"
-import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { useStaticQuery, graphql, Link } from "gatsby"
 
 
-
-const IndexPage = ({
-  data: {
-    allMarkdownRemark: { edges },
-  },
-}) => {
-  const Posts = edges
-    .map(edge => <p>{edge.node.frontmatter.title}, {edge.node.frontmatter.language}</p>)
-  return (<Layout>
-  <SEO title="Home" />{Posts}
-  
-    <ProductList/>
-    <ProductList/>
-    
-    </Layout>)
-}
-
-
-export default IndexPage
-
-
-export const pageQuery = graphql`
-  query News {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
-      edges {
-        node {
-          id
-          excerpt(pruneLength: 250)
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            title
-            language
+const News = () => {
+  const data = useStaticQuery(graphql`
+    {
+      allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {layout: {eq: "news"}}}) {
+        edges {
+          node {
+            id
+            excerpt(pruneLength: 250)
+            frontmatter {
+              date(formatString: "MMMM DD, YYYY")
+              title
+            }
+            fields {
+              slug
+            }
           }
         }
       }
     }
-  }
-`
+  `)
+  
+    return <Layout>
+      <SEO title="News" />
+
+      {data.allMarkdownRemark.edges.map((value, index) => {
+        return <LinkTo key={index} to={value.node.fields.slug} text={value.node.frontmatter.title}/>
+      })}
+      
+      </Layout>
+}
+
+export default News
+
+function LinkTo({to, text}) {
+  return (
+  <li> <Link to={to}>{text}</Link></li>
+  )
+}
+
 
 
 

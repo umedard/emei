@@ -12,7 +12,7 @@ const IndexPage = ({
   },
 }) => {
   const Posts = edges
-    .map(edge => <p>{edge.node.frontmatter.title}, {edge.node.frontmatter.language}</p>)
+    .map(edge => <p key={edge.node.frontmatter.title}>{edge.node.frontmatter.title}, {edge.node.frontmatter.language}</p>)
   return (<Layout>
   <SEO title="Home" />{Posts}
   
