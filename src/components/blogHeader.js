@@ -40,7 +40,7 @@ function LinkTo({to, text, date, excerpt, thumbnail}) {
   return (
      <Link className={style.link__item} to={to}>
         <div className={style.link__text}>{text}</div> 
-        <img src={thumbnail}/>
+        
         <div className={style.link__excerpt}>{excerpt}</div> 
         <div className={style.link__date}>{date}</div> 
       </Link>
