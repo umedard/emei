@@ -14,6 +14,7 @@ collections:
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
       - { name: "layout",label: "Layout", widget: "hidden", default: "news"}
+      - { name: "thumbnail",label: "Featured Image",  widget: "image"}
   - name: products
     label: Products
     folder: content/products
@@ -46,6 +47,10 @@ collections:
       - {label: "Fax", name: "fax",  widget: "number", valueType: "int"}
       - {label: "Location", name: "location", widget: "map" }
       - { name: "layout",label: "Layout", widget: "hidden", default: "contact"}
+
+
+    
+ 
   
 
 
