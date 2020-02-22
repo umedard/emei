@@ -44,6 +44,7 @@ collections:
       - {label: "Address", name: "address", widget: "string"}
       - {label: "Phone", name: "phone",  widget: "number", valueType: "int"}
       - {label: "Fax", name: "fax",  widget: "number", valueType: "int"}
+      - {label: "Location", name: "location", widget: "map" }
       - { name: "layout",label: "Layout", widget: "hidden", default: "contact"}
   
 
