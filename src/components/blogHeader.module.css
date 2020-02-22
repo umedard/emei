@@ -12,8 +12,21 @@
 
 .link__text {   
     font-size: 1rem;
+    color: red;
 }
 
 .link__date {
     font-size: .7rem;
+}
+
+.link__thumbnail {
+    float: left;
+    max-width: 20rem;
+    padding-right: 1rem;
+}
+
+@media (max-width:800px) {
+    .link__thumbnail {
+        max-width: 10rem;
+    }
 }

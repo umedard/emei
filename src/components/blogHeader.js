@@ -28,7 +28,7 @@ const News = () => {
     return (
         <div className={style.link__list}>
           {data.allMarkdownRemark.edges.map((value, index) => {
-            return <LinkTo key={index} to={value.node.fields.slug} text={value.node.frontmatter.title} date={value.node.frontmatter.date} excerpt={value.node.excerpt} thumbnail={value.node.thumbnail}/>
+            return <LinkTo key={index} to={value.node.fields.slug} text={value.node.frontmatter.title} date={value.node.frontmatter.date} excerpt={value.node.excerpt} thumbnail={value.node.frontmatter.thumbnail}/>
           })}
         </div>
       )
@@ -41,7 +41,10 @@ function LinkTo({to, text, date, excerpt, thumbnail}) {
      <Link className={style.link__item} to={to}>
         <div className={style.link__text}>{text}</div> 
         
-        <div className={style.link__excerpt}>{excerpt}</div> 
+        <div className={style.link__excerpt}>
+            <img className={style.link__thumbnail} src={thumbnail} alt={text}/>   
+            {excerpt}
+        </div> 
         <div className={style.link__date}>{date}</div> 
       </Link>
   )
