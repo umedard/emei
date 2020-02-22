@@ -14,6 +14,7 @@ const News = () => {
             frontmatter {
               date(formatString: "MMMM DD, YYYY")
               title
+              thumbnail
             }
             fields {
               slug
@@ -27,7 +28,7 @@ const News = () => {
     return (
         <div className={style.link__list}>
           {data.allMarkdownRemark.edges.map((value, index) => {
-            return <LinkTo key={index} to={value.node.fields.slug} text={value.node.frontmatter.title} date={value.node.frontmatter.date} excerpt={value.node.excerpt}/>
+            return <LinkTo key={index} to={value.node.fields.slug} text={value.node.frontmatter.title} date={value.node.frontmatter.date} excerpt={value.node.excerpt} thumbnail={value.node.thumbnail}/>
           })}
         </div>
       )
@@ -35,10 +36,11 @@ const News = () => {
 
 export default News
 
-function LinkTo({to, text, date, excerpt}) {
+function LinkTo({to, text, date, excerpt, thumbnail}) {
   return (
      <Link className={style.link__item} to={to}>
         <div className={style.link__text}>{text}</div> 
+        <img src={thumbnail}/>
         <div className={style.link__excerpt}>{excerpt}</div> 
         <div className={style.link__date}>{date}</div> 
       </Link>
