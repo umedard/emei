@@ -4,21 +4,6 @@
     list-style: none;
 }
 
-.link__item {
-    padding: 1rem;
-    color: black;
-    text-decoration: none;
-}
-
-.link__text {   
-    font-size: 1rem;
-    color: red;
-}
-
-.link__date {
-    font-size: .7rem;
-}
-
 .link__thumbnail {
     float: left;
     max-width: 20rem;

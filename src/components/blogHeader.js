@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import style from "./blogHeader.module.css"
+import styleBlog from "./blog.module.css"
 
 
 const News = () => {
@@ -38,14 +39,14 @@ export default News
 
 function LinkTo({to, text, date, excerpt, thumbnail}) {
   return (
-     <Link className={style.link__item} to={to}>
-        <div className={style.link__text}>{text}</div> 
+     <Link className={styleBlog.link__item} to={to}>
+        <div className={styleBlog.link__text}>{text}</div> 
         
-        <div className={style.link__excerpt}>
+        <div className={styleBlog.link__excerpt}>
             <img className={style.link__thumbnail} src={thumbnail} alt={text}/>   
             {excerpt}
         </div> 
-        <div className={style.link__date}>{date}</div> 
+        <div className={styleBlog.link__date}>{date}</div> 
       </Link>
   )
 }

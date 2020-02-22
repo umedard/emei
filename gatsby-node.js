@@ -44,7 +44,7 @@ exports.createPages = async function({ actions, graphql }) {
           })
           break;
 
-          case "blogs":
+          case "news":
           actions.createPage({
             path: slug,
             component: require.resolve(`./src/templates/blog.js`),

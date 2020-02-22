@@ -11,7 +11,14 @@
 }
 
 .link__text {   
+    padding-bottom: .6rem;
     font-size: 1rem;
+    color: #000000;
+}
+
+.link__excerpt {   
+    padding-bottom: .6rem;
+    font-size: .8rem;
 }
 
 .link__date {
