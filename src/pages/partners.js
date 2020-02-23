@@ -22,7 +22,7 @@ const Partners = () => {
   const graph = data.allMarkdownRemark.edges[0].node.frontmatter;
   return (
     <Layout>
-      <Highlighted text="Partners" imgUrl="/images/contact_banner.jpg" url="/partners" />
+      <Highlighted text="Partners" imgUrl="/images/partners.jpeg" url="/partners" />
       <SEO title="Partners" />
           {graph.description}
 

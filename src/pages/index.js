@@ -14,7 +14,7 @@ const IndexPage = ({
   const Posts = edges
     .map(edge => <p key={edge.node.frontmatter.title}>{edge.node.frontmatter.title}, {edge.node.frontmatter.language}</p>)
   return (<Layout>
-     <Highlighted text="Welcome to EMEIL group" imgUrl="/images/emeigroup.jpg" url="/" />
+     <Highlighted text="Welcome to EMEI group" imgUrl="/images/emeigroup.jpg" url="/" />
   <SEO title="Home" />
   
   {Posts}

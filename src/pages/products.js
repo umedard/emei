@@ -15,7 +15,7 @@ const IndexPage = ({
     .map(edge => <p>{edge.node.frontmatter.title}, {edge.node.frontmatter.language}</p>)
   return (<Layout>
   <SEO title="Home" />
-  <Highlighted text="Products" imgUrl="/images/contact_banner.jpg" url="/products" />
+  <Highlighted text="Products" imgUrl="/images/electornics.jpeg" url="/products" />
   {Posts}
     <ProductList/>
     <ProductList/>

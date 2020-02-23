@@ -10,7 +10,7 @@ export default ({ data }) => {
   const post = data.markdownRemark
   return (
     <Layout>
-          <Highlighted text="News" imgUrl="/images/contact_banner.jpg" url="/news" />
+          <Highlighted text="News" imgUrl="/images/news.jpeg" url="/news" />
           <Header header={post.frontmatter.title}/>
           <Section section={post.html } />
     </Layout>

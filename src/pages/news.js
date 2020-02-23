@@ -9,7 +9,7 @@ const News = () => {
     return (
     <Layout>
         <SEO title="News" />
-        <Highlighted text="News" imgUrl="/images/contact_banner.jpg" url="/news" />
+        <Highlighted text="News" imgUrl="/images/news.jpeg" url="/news" />
         <BlogHeader />
         <Blog/>
     </Layout>

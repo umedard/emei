@@ -24,7 +24,7 @@ const Contact = () => {
   const contact = data.allMarkdownRemark.edges[0].node.frontmatter;
   return (
     <Layout>
-      <Highlighted text="Contact" imgUrl="/images/contact_banner.jpg" url="/contact" />
+      <Highlighted text="Contact" imgUrl="/images/contact.jpeg" url="/contact" />
       <SEO title="Contact" />
           Tel: {contact.phone} 
 
