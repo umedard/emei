@@ -36,13 +36,13 @@ exports.createPages = async function({ actions, graphql }) {
       const slug = edge.node.fields.slug
 
       switch (edge.node.frontmatter.layout) {
-        case "pages":
+        /* case "pages":
           actions.createPage({
             path: slug,
             component: require.resolve(`./src/templates/pages.js`),
             context: { slug: slug },
           })
-          break;
+          break; */
 
           case "news":
           actions.createPage({

@@ -7,7 +7,7 @@ const Menu = () => (
   <nav>
       <ul className={style.menu__list}>
            <LinkTo to="/" text="Home"/>
-           <LinkTo to="/about-us" text="About Us"/>
+           <LinkTo to="/aboutus" text="About Us"/>
            <LinkTo to="/news" text="News"/>
            <LinkTo to="/products" text="Products"/>
            <LinkTo to="/partners" text="Partners"/>

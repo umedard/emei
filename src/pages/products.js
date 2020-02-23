@@ -3,7 +3,7 @@ import ProductList from "../components/productList"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-
+import Highlighted from "../components/highlighted"
 
 
 const IndexPage = ({
@@ -14,8 +14,9 @@ const IndexPage = ({
   const Posts = edges
     .map(edge => <p>{edge.node.frontmatter.title}, {edge.node.frontmatter.language}</p>)
   return (<Layout>
-  <SEO title="Home" />{Posts}
-  
+  <SEO title="Home" />
+  <Highlighted text="Products" imgUrl="/images/contact_banner.jpg" url="/products" />
+  {Posts}
     <ProductList/>
     <ProductList/>
     

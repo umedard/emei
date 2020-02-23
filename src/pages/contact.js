@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Highlighted from "../components/highlighted"
 
-const ComponentName = () => {
+const Contact = () => {
   const data = useStaticQuery(graphql`
     {
       allMarkdownRemark(filter: {frontmatter: {layout: {eq: "contact"}}}, sort: {}) {
@@ -34,7 +34,7 @@ const ComponentName = () => {
     )
 }
 
-export default ComponentName
+export default Contact
 
 
 
