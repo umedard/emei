@@ -56,7 +56,7 @@ collections:
       - {name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
       - { name: layout,label: Layout, widget: hidden, default: aboutus}
-      - { name: description, label: description, widget: markdown }
+
   - name: partners
     label: Partners
     folder: content/partners
@@ -64,7 +64,7 @@ collections:
     fields:
       - {name: title, label: Title }
       - { name: layout,label: Layout, widget: hidden, default: partners}
-      - { name: description, label: description, widget: markdown }
+      - { name: body, label: Body, widget: markdown }
 
 
     
