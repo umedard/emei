@@ -3,7 +3,7 @@ import ProductList from "../components/productList"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-
+import Highlighted from "../components/highlighted"
 
 
 const IndexPage = ({
@@ -14,7 +14,10 @@ const IndexPage = ({
   const Posts = edges
     .map(edge => <p key={edge.node.frontmatter.title}>{edge.node.frontmatter.title}, {edge.node.frontmatter.language}</p>)
   return (<Layout>
-  <SEO title="Home" />{Posts}
+     <Highlighted text="Welcome to EMEIL group" imgUrl="/images/emeigroup.jpg" url="/" />
+  <SEO title="Home" />
+  
+  {Posts}
   
     <ProductList/>
     <ProductList/>

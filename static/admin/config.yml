@@ -9,44 +9,61 @@ collections:
     folder: content/news
     create: true
     fields:
-      - { name: language, widget: "select", multiple: false, options: ["zh", "en"]}
+      - { name: language, widget: select, multiple: false, options: [zh, en]}
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
-      - { name: "layout",label: "Layout", widget: "hidden", default: "news"}
-      - { name: "thumbnail",label: "Featured Image",  widget: "image", required: true}
+      - { name: layout,label: Layout, widget: hidden, default: news}
+      - { name: thumbnail,label: Featured Image,  widget: image, required: true, multiple: true}
   - name: products
     label: Products
     folder: content/products
     create: true
     fields:
-      - { name: category, widget: "select", multiple: false, options: ["Bulk Molding Compounds", "EMI Shielding Materials", "Inductive Components", "Polymer Adhesive Materials", "Thermal Management Materials"]}
-      - { name: language, widget: "select", multiple: false, options: ["zh", "en"]}
+      - { name: category, widget: select, multiple: false, options: [Bulk Molding Compounds, EMI Shielding Materials, Inductive Components, Polymer Adhesive Materials, Thermal Management Materials]}
+      - { name: language, widget: select, multiple: false, options: [zh, en]}
       - { name: title, label: Title }
       - { name: date, label: Date, widget: datetime }
       - { name: body, label: Body, widget: markdown }
-      - { name: "layout",label: "Layout", widget: "hidden", default: "products"}
+      - { name: layout,label: Layout, widget: hidden, default: products}
   - name: pages
     label: Pages
     folder: content/pages
     create: true
     fields:
-      - { name: language, widget: "select", multiple: false, options: ["zh", "en"]}
+      - { name: language, widget: select, multiple: false, options: [zh, en]}
       - { name: title, label: Title }
       - { name: date, label: Date, widget: datetime }
       - { name: body, label: Body, widget: markdown }
-      - { name: "layout",label: "Layout", widget: "hidden", default: "pages"}
+      - { name: layout,label: Layout, widget: hidden, default: pages}
   - name: contact
     label: Contact
-    folder: content
-    create: true
+    folder: content/contact
+    create: false
     fields:
       - { name: title, label: Title }
-      - {label: "Address", name: "address", widget: "string"}
-      - {label: "Phone", name: "phone",  widget: "number", valueType: "int"}
-      - {label: "Fax", name: "fax",  widget: "number", valueType: "int"}
-      - {label: "Location", name: "location", widget: "map" }
-      - { name: "layout",label: "Layout", widget: "hidden", default: "contact"}
+      - {label: Address, name: address, widget: string}
+      - {label: Phone, name: phone,  widget: number, valueType: int}
+      - {label: Fax, name: fax,  widget: number, valueType: int}
+      - {label: Location, name: location, widget: map }
+      - { name: layout,label: Layout, widget: hidden, default: contact}
+      - { name: description, label: description, widget: markdown }
+  - name: aboutus
+    label: Aboutus
+    folder: content/aboutus
+    create: true
+    fields:
+      - {name: title, label: Title }
+      - { name: layout,label: Layout, widget: hidden, default: aboutus}
+      - { name: description, label: description, widget: markdown }
+  - name: partners
+    label: Partners
+    folder: content/partners
+    create: true
+    fields:
+      - {name: title, label: Title }
+      - { name: layout,label: Layout, widget: hidden, default: partners}
+      - { name: description, label: description, widget: markdown }
 
 
     
