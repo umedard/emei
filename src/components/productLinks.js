@@ -20,7 +20,7 @@ function LinkTo({to, text}) {
 const BulkMoldingCompounds = () => {
   const data = useStaticQuery(graphql`
     {
-      allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {layout: {}, category: {eq: "Bulk Molding Compounds"}}}) {
+      allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {layout: {}, category: {eq: "EMI Shielding Materials"}}}) {
         edges {
           node {
             frontmatter {
