@@ -19,12 +19,16 @@ const Partners = () => {
     }
     }
   `)
-  const graph = data.allMarkdownRemark.edges[0].node.frontmatter;
+  const graph = data.allMarkdownRemark.edges[0].node.frontmatter.description;
   return (
     <Layout>
       <Highlighted text="About Us" imgUrl="/images/contact_banner.jpg" url="/aboutus" />
       <SEO title="Partners" />
-          {graph.description}
+         
+
+          <main dangerouslySetInnerHTML={{ __html: graph}}>
+          
+        </main>
 
     </Layout>
  
