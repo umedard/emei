@@ -17,3 +17,9 @@
     font-size: 1.2rem;
     color: black;
 }
+
+@media (max-width: 800px) {
+    .highlighted__container {
+        height: 10rem;
+    }
+}

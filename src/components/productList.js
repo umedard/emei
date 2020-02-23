@@ -6,7 +6,7 @@ import style from "./productList.module.css"
 export default function ProductList() {
     return (
         <aside className={style.list}>
-            <Product url="/Thermal_Management_Materials" name="Thermal Management Materials" photo="./images/logo.jpg"/>
+            <Product url="/Thermal_Management_Materials" name="Thermal Management Materials" photo="/images/logo.jpg"/>
         </aside>
     )
 }
