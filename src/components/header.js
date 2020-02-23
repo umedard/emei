@@ -8,7 +8,7 @@ const Header = () => (
     <div className={style.header__wrapper}>
       <div className={style.header__logo}></div>
       <div className={style.header__searchBox} >
-        <div className={style.header__language} >中文 | English </div>
+        <div className={style.header__language} >{/* 中文 | English  */}</div>
         {/* <input className={style.header__search} type="text" placeholder="search"></input> */}
       </div>
     </div>
