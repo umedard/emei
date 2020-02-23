@@ -11,15 +11,13 @@ const Partners = () => {
     allMarkdownRemark(filter: {frontmatter: {layout: {eq: "aboutus"}}}, sort: {}) {
       edges {
         node {
-          frontmatter {
-            description
-          }
+          html
         }
       }
     }
     }
   `)
-  const graph = data.allMarkdownRemark.edges[0].node.frontmatter.description;
+  const graph = data.allMarkdownRemark.edges[0].node.html;
   return (
     <Layout>
       <Highlighted text="About Us" imgUrl="/images/contact_banner.jpg" url="/aboutus" />

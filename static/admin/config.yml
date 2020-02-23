@@ -51,7 +51,7 @@ collections:
   - name: aboutus
     label: Aboutus
     folder: content/aboutus
-    create: true
+    create: false
     fields:
       - {name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
@@ -60,7 +60,7 @@ collections:
   - name: partners
     label: Partners
     folder: content/partners
-    create: true
+    create: false
     fields:
       - {name: title, label: Title }
       - { name: layout,label: Layout, widget: hidden, default: partners}

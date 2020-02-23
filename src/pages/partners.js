@@ -11,20 +11,20 @@ const Partners = () => {
     allMarkdownRemark(filter: {frontmatter: {layout: {eq: "partners"}}}, sort: {}) {
       edges {
         node {
-          frontmatter {
-            description
-          }
+          html
         }
       }
     }
     }
   `)
-  const graph = data.allMarkdownRemark.edges[0].node.frontmatter;
+  const graph = data.allMarkdownRemark.edges[0].node.html;
   return (
     <Layout>
       <Highlighted text="Partners" imgUrl="/images/partners.jpeg" url="/partners" />
       <SEO title="Partners" />
-          {graph.description}
+      <main dangerouslySetInnerHTML={{ __html: graph}}>
+          
+          </main>
 
     </Layout>
  
