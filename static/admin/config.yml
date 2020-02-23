@@ -38,7 +38,7 @@ collections:
       - { name: layout,label: Layout, widget: hidden, default: pages}
   - name: contact
     label: Contact
-    folder: content/contact
+    folder: content
     create: false
     fields:
       - { name: title, label: Title }

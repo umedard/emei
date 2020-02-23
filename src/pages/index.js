@@ -8,7 +8,7 @@ export default function Index() {
   return (
     <Layout>
       <SEO title="Home" />
-      <Highlighted text="Welcome to EMEI group" imgUrl="/images/electornics.jpeg" url="/" />
+      <Highlighted text="Welcome to EMEI group" imgUrl="/images/hardware.jpeg" url="/" />
     </Layout>
   )
 }

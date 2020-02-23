@@ -2,22 +2,15 @@ import React from 'react'
 import style from "./productLinks.module.css"
 import {Link, useStaticQuery, graphql} from 'gatsby'
 
-function ProductLinks() {
-    return (
-        <ul className={style.list}>
-            <LinkTo to="/about-us" text="Bisco® or Poron®"/>
-        </ul>
-    )
-}
 
-function LinkTo({to, text}) {
+const LinkTo = ({to, text}) => {
     return (
     <li className={style.list__item}><Link className={style.list__link} to={to}>{text}</Link></li>
     )
 }
 
 
-const BulkMoldingCompounds = () => {
+export const BulkMoldingCompounds = () => {
   const data = useStaticQuery(graphql`
     {
       allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {layout: {}, category: {eq: "EMI Shielding Materials"}}}) {
@@ -37,7 +30,7 @@ const BulkMoldingCompounds = () => {
   return (
       <section>
           {data.allMarkdownRemark.edges.map((value, index) => {
-            return <LinkTo key={index} to={value.node.fields.slug} text={value.node.frontmatter.title} date={value.node.frontmatter.date} excerpt={value.node.excerpt}/>
+            return <LinkTo key={index} to={value.node.fields.slug} text={value.node.frontmatter.title} />
           })}
       </section>
       
@@ -45,4 +38,3 @@ const BulkMoldingCompounds = () => {
       )
 }
 
-export default BulkMoldingCompounds
