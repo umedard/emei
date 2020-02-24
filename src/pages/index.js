@@ -12,9 +12,8 @@ export default function Index() {
       <SEO title="Home" />
       <Highlighted text="Welcome to EMEI group" imgUrl="/images/hardware.jpeg" url="/" />
       <PageWrapper>
- <Blog/>
-</PageWrapper>
-     
+          <Blog/>
+      </PageWrapper>
     </Layout>
   )
 }

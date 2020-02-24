@@ -11,12 +11,10 @@ const News = () => {
     <Layout>
         <SEO title="News" />
         <Highlighted text="News" imgUrl="/images/news.jpeg" url="/news" />
-     
         <PageWrapper>
-   <BlogHeader /> 
-   <Blog/>
-</PageWrapper>
-       
+            <BlogHeader /> 
+            <Blog/>
+        </PageWrapper>
     </Layout>
       )
 }

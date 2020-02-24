@@ -10,11 +10,12 @@
 
 .product__wrapper {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-between;
 }
 
 .product__children {
-    width: 70%;
+    width: 65%;
+    font-size: .9rem;
 }

@@ -2,7 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import style from "./blog.module.css"
 
-const NewsHP = () => {
+const HomePageBlog = () => {
   const data = useStaticQuery(graphql`
     {
       allMarkdownRemark(filter: {frontmatter: {layout: {eq: "news"}}}, skip: 1, limit: 3, sort: {order: DESC, fields: [frontmatter___date]}) {
@@ -32,7 +32,7 @@ const NewsHP = () => {
       )
 }
 
-export default NewsHP
+export default HomePageBlog
 
 function LinkTo({to, text, date, excerpt}) {
   return (

@@ -19,9 +19,7 @@ const Menu = () => (
 export default Menu
 
 function LinkTo({to, text}) {
-  return (
-  <li className={style.menu__item}><Link className={style.menu__link} to={to}>{text}</Link></li>
-  )
+  return <li className={style.menu__item}><Link className={style.menu__link} to={to}>{text}</Link></li>
 }
 
 

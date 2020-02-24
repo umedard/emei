@@ -1,7 +1,6 @@
 import React from 'react'
 import {useStaticQuery, graphql} from 'gatsby'
-import LinkTo from '../productLinks'
-
+import ProductLinks from '../productLinks'
 
  const EMIShieldingMaterials = () => {
   const data = useStaticQuery(graphql`
@@ -23,11 +22,9 @@ import LinkTo from '../productLinks'
   return (
       <section>
           {data.allMarkdownRemark.edges.map((value, index) => {
-            return <LinkTo key={index} to={value.node.fields.slug} text={value.node.frontmatter.title} />
+            return <ProductLinks key={index} to={value.node.fields.slug} text={value.node.frontmatter.title} />
           })}
       </section>
-      
-      
       )
 }
 

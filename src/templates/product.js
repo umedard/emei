@@ -17,7 +17,6 @@ export default ({ data }) => {
             <Header header={post.frontmatter}/>
             <Section section={post.html } />
           </PageWrapper>
-        
     </Layout>
   )
 }
