@@ -5,12 +5,14 @@ import Header from "../components/pageHeader"
 import Section from "../components/pageSection"
 import Highlighted from "../components/highlighted"
 import PageWrapper from "../components/pageWrapper"
+import SEO from "../components/seo"
 
 export default ({ data }) => {
   const post = data.markdownRemark
   return (
     <Layout>
           <Highlighted text="Products" imgUrl="/images/electornics.jpeg" url="/products" />
+          <SEO title={post.frontmatter.title} />
           <PageWrapper>
             <Header header={post.frontmatter.title}/>
             <Header header={post.frontmatter.category}/>

@@ -5,6 +5,7 @@ import Header from "../components/pageHeader"
 import Section from "../components/pageSection"
 import Highlighted from "../components/highlighted"
 import PageWrapper from "../components/pageWrapper"
+import SEO from "../components/seo"
 
 
 export default ({ data }) => {
@@ -12,10 +13,10 @@ export default ({ data }) => {
   return (
     <Layout>
           <Highlighted text="News" imgUrl="/images/news.jpeg" url="/news" />
-         
+          <SEO title={post.frontmatter.title} />
           <PageWrapper> 
-            <Header header={post.frontmatter.title}/>
-<Section section={post.html } />
+            <Header header={post.frontmatter}/>
+            <Section section={post.html } />
 </PageWrapper>
           
     </Layout>
@@ -27,6 +28,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        date(formatString: "MMMM Do, YYYY")
       }
     }
   }
