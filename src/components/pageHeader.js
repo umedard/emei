@@ -7,7 +7,8 @@ export default function pageHeader({header}) {
             <h1 className={style.header}>
             {header.title}
              </h1>
-             <h5> {header.date}</h5>
+             { header.date && <h5> {header.date}</h5> }
+             { header.category && <h5> {header.category}</h5> }
         </div>
         
     )

@@ -1,0 +1,20 @@
+.product__section {
+    padding: 2rem 0;
+
+}.product__title {
+    width: 100%;
+    border-bottom: 2px solid red;
+    padding: .5rem 0;
+    margin-bottom: 1rem;
+}
+
+.product__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.product__children {
+    width: 70%;
+}

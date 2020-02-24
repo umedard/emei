@@ -14,10 +14,9 @@ export default ({ data }) => {
           <Highlighted text="Products" imgUrl="/images/electornics.jpeg" url="/products" />
           <SEO title={post.frontmatter.title} />
           <PageWrapper>
-            <Header header={post.frontmatter.title}/>
-            <Header header={post.frontmatter.category}/>
+            <Header header={post.frontmatter}/>
             <Section section={post.html } />
-</PageWrapper>
+          </PageWrapper>
         
     </Layout>
   )
