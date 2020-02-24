@@ -1,6 +1,6 @@
 ---
 language: zh
-date: 2020-02-19T18:12:15.279Z
+date: 2020-02-21T18:12:15.279Z
 title: Thermal management gaskets
 layout: news
 thumbnail: assets/cir.jpeg
