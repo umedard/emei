@@ -10,16 +10,17 @@
 }
 
 .link__text {   
-    padding-bottom: .6rem;
+    padding-bottom: .3rem;
     font-size: 1rem;
     color: #000000;
 }
 
 .link__excerpt {   
-    padding-bottom: .6rem;
+    padding-bottom: .2rem;
     font-size: .8rem;
 }
 
 .link__date {
     font-size: .7rem;
+    padding-bottom: 1.5em;
 }
