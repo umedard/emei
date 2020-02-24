@@ -1,0 +1,57 @@
+:root {
+    --width: 100%;
+    --background: #F2F2F2;
+    --padding: .5rem 1rem .5rem .4rem;
+    --focus-line: 2px solid red;
+  }
+  
+.contact__form {
+    min-width: 17rem;
+}
+
+.contact__send {
+    padding: .2rem 1rem;
+    border: none;
+    color: white;
+    background-color: red;
+}
+
+.contact__message {
+    width: var(--width);
+    padding: var(--padding);
+    height: 14em;
+    border: none;
+    outline: none;
+    background-color: var(--background);
+    border-bottom: 2px solid white;
+}
+
+.contact__message:focus {
+    border-bottom: var(--focus-line)
+}
+
+.contact__email {
+    padding: var(--padding);
+    width: var(--width);
+    outline: none;
+    border: none;
+    background-color: var(--background);
+    border-bottom: 2px solid white;
+}
+
+.contact__email:focus {
+    border-bottom: var(--focus-line)
+}
+
+.contact__text {
+    padding: var(--padding);
+    width: var(--width);
+    background-color: var(--background);
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+}
+
+.contact__text:focus{
+    border-bottom: var(--focus-line)
+}

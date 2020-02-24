@@ -1,6 +1,6 @@
 import React from 'react'
 import style from "./productLinks.module.css"
-import {Link, useStaticQuery, graphql} from 'gatsby'
+import {Link} from 'gatsby'
 
 
 const LinkTo = ({to, text}) => {

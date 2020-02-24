@@ -36,13 +36,8 @@ export default function Products() {
           <ProductSection title="Thermal Management Materials" productComponent={<ThermalManagementMaterials/>}>
             Adipiscing elit. Curabitur aliquet cursus dui quis vehicula. Donec hendrerit sapien tortor, vel pulvinar neque convallis a. Etiam luctus elementum magna quis rhoncus. Quisque vitae erat dignissim, imperdiet velit vel, elementum lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
             
-          </ProductSection>
-          
+          </ProductSection>       
       </PageWrapper>
-
-
-     
-     
     </Layout>
   )
 }
