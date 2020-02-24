@@ -4,14 +4,19 @@ import SEO from "../components/seo"
 import Blog from "../components/blog"
 import BlogHeader from "../components/blogHeader"
 import Highlighted from "../components/highlighted"
+import PageWrapper from "../components/pageWrapper"
 
 const News = () => {
     return (
     <Layout>
         <SEO title="News" />
         <Highlighted text="News" imgUrl="/images/news.jpeg" url="/news" />
-        <BlogHeader />
-        <Blog/>
+     
+        <PageWrapper>
+   <BlogHeader /> 
+   <Blog/>
+</PageWrapper>
+       
     </Layout>
       )
 }

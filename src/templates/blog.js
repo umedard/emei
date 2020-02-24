@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import Header from "../components/pageHeader"
 import Section from "../components/pageSection"
 import Highlighted from "../components/highlighted"
+import PageWrapper from "../components/pageWrapper"
 
 
 export default ({ data }) => {
@@ -11,8 +12,12 @@ export default ({ data }) => {
   return (
     <Layout>
           <Highlighted text="News" imgUrl="/images/news.jpeg" url="/news" />
-          <Header header={post.frontmatter.title}/>
-          <Section section={post.html } />
+         
+          <PageWrapper> 
+            <Header header={post.frontmatter.title}/>
+<Section section={post.html } />
+</PageWrapper>
+          
     </Layout>
   )
 }

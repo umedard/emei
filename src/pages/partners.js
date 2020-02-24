@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Highlighted from "../components/highlighted"
+import PageWrapper from "../components/pageWrapper"
 
 const Partners = () => {
   const data = useStaticQuery(graphql`
@@ -22,9 +23,12 @@ const Partners = () => {
     <Layout>
       <Highlighted text="Partners" imgUrl="/images/partners.jpeg" url="/partners" />
       <SEO title="Partners" />
-      <main dangerouslySetInnerHTML={{ __html: graph}}>
+      <PageWrapper>
+<main dangerouslySetInnerHTML={{ __html: graph}}>
           
           </main>
+</PageWrapper>
+      
 
     </Layout>
  

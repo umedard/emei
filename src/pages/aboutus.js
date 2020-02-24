@@ -3,8 +3,9 @@ import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Highlighted from "../components/highlighted"
+import PageWrapper from "../components/pageWrapper"
 
-const Partners = () => {
+const AboutUs = () => {
   const data = useStaticQuery(graphql`
     {
       
@@ -21,12 +22,14 @@ const Partners = () => {
   return (
     <Layout>
       <Highlighted text="About Us" imgUrl="/images/aboutus.jpeg" url="/aboutus" />
-      <SEO title="Partners" />
-         
-
-          <main dangerouslySetInnerHTML={{ __html: graph}}>
+      <SEO title="About Us" />
+      <PageWrapper>
+         <main dangerouslySetInnerHTML={{ __html: graph}}>
           
         </main>
+      </PageWrapper>
+
+         
 
     </Layout>
  
@@ -34,7 +37,7 @@ const Partners = () => {
     )
 }
 
-export default Partners
+export default AboutUs
 
 
 

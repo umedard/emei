@@ -3,7 +3,6 @@ import {Link} from 'gatsby'
 import Menu from './mainMenu'
 import style from "./header.module.css"
 
-
 const Header = () => (
   <header className={style.header} >
     <div className={style.header__wrapper}>

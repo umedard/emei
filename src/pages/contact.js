@@ -3,6 +3,8 @@ import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Highlighted from "../components/highlighted"
+import PageWrapper from "../components/pageWrapper"
+
 
 const Contact = () => {
   const data = useStaticQuery(graphql`
@@ -26,7 +28,11 @@ const Contact = () => {
     <Layout>
       <Highlighted text="Contact" imgUrl="/images/contact.jpeg" url="/contact" />
       <SEO title="Contact" />
-          Tel: {contact.phone} 
+
+       
+          <PageWrapper>
+   Tel: {contact.phone} 
+</PageWrapper>
 
     </Layout>
  

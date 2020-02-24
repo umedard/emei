@@ -2,10 +2,10 @@ import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import style from "./blog.module.css"
 
-const News = () => {
+const NewsHP = () => {
   const data = useStaticQuery(graphql`
     {
-      allMarkdownRemark(filter: {frontmatter: {layout: {eq: "news"}}}, skip: 1, limit: 10, sort: {order: DESC, fields: [frontmatter___date]}) {
+      allMarkdownRemark(filter: {frontmatter: {layout: {eq: "news"}}}, skip: 1, limit: 3, sort: {order: DESC, fields: [frontmatter___date]}) {
         edges {
           node {
             id
@@ -32,7 +32,7 @@ const News = () => {
       )
 }
 
-export default News
+export default NewsHP
 
 function LinkTo({to, text, date, excerpt}) {
   return (
