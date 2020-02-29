@@ -5,5 +5,10 @@
     justify-content: space-between;
 }
 
+@media (max-width: 700px) {
+    .contact__wrapper {
+        flex-direction: column;
+    }
+}
 
 
