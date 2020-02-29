@@ -1,7 +1,8 @@
 .product__section {
     padding: 0 0 4rem 0;
 
-}.product__title {
+}
+.product__title {
     width: 100%;
     border-bottom: 2px solid red;
     padding: .5rem 0;
@@ -15,7 +16,25 @@
     justify-content: space-between;
 }
 
+@media (max-width: 700px ){
+    .product__wrapper {
+        flex-wrap: wrap;
+    }
+}
+
 .product__children {
     width: 65%;
+    font-size: .9rem;
+}
+
+@media (max-width: 700px ){
+    .product__children {
+        width: 100%;
+        margin-top: 1rem;
+    }
+}
+
+.product__component {
+    min-width: 17rem;
     font-size: .9rem;
 }
